@@ -65,7 +65,7 @@ public func getEnvSearchPaths(
 /// - Returns: Valid path to executable if present, otherwise nil.
 public func lookupExecutablePath(
     filename value: String?,
-    currentWorkingDirectory: AbsolutePath? = currentWorkingDirectory,//localFileSystem.currentWorkingDirectory,
+    currentWorkingDirectory: AbsolutePath? = localFileSystem.currentWorkingDirectory,
     searchPaths: [AbsolutePath] = []
 ) -> AbsolutePath? {
 
